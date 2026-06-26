@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brutalism Style</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="site-header">
+        <span class="site-name">Brutal</span>
+        <nav class="site-nav">
+          <a href="#">Writing</a>
+          <a href="#">About</a>
+          <a href="#">Archive</a>
+        </nav>
+      </header>
+
+      <div class="showcase">
+        <!-- Hero -->
+        <section class="hero">
+          <p class="hero-tag">Design Style</p>
+          <h1>Structure is the design.</h1>
+          <p>
+            Nothing is hidden. Borders define territory. Weight signals hierarchy.
+            Rawness is not a mistake — it is a choice.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">Read more</button>
+            <button class="btn btn-secondary">About</button>
+          </div>
+        </section>
+
+        <!-- Article list -->
+        <section>
+          <p class="section-label">Articles</p>
+          <div class="article-list">
+            <div class="article-item">
+              <div>
+                <p class="article-category">Design</p>
+                <p class="article-title">Expose the structure</p>
+                <p class="article-excerpt">
+                  Decoration conceals the bones. Brutalism shows them.
+                </p>
+              </div>
+              <span class="article-date">2026-06-20</span>
+            </div>
+            <div class="article-item">
+              <div>
+                <p class="article-category">Typography</p>
+                <p class="article-title">Weight is not decoration</p>
+                <p class="article-excerpt">
+                  Heavy type does not shout. It commands.
+                </p>
+              </div>
+              <span class="article-date">2026-06-12</span>
+            </div>
+            <div class="article-item">
+              <div>
+                <p class="article-category">Borders</p>
+                <p class="article-title">2px is a statement</p>
+                <p class="article-excerpt">
+                  1px says "I am barely here." 2px says "I mean it."
+                </p>
+              </div>
+              <span class="article-date">2026-05-30</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Rich text -->
+        <section>
+          <p class="section-label">Rich Text</p>
+          <div class="article-header">
+            <p class="article-header-category">Design</p>
+            <h1 class="article-header-title">Expose the structure</h1>
+            <p class="article-header-date">2026-06-20</p>
+          </div>
+          <div class="rich-text">
+            <figure class="fig-hero">
+              <img
+                src="https://placehold.co/1200x600/000000/ffffff?text=."
+                alt="Hero image"
+              />
+              <figcaption>Raw material. Unadorned.</figcaption>
+            </figure>
+            <p>
+              Brutalism in architecture meant honesty of materials — concrete
+              left raw, steel left exposed, structure made visible. In web design,
+              the same principle applies: show what the page is made of.
+            </p>
+            <p>Borders are honest. Drop shadows are a lie.</p>
+            <h2>Borders define territory</h2>
+            <p>
+              Before adding a border, most designers ask: "does this look good?"
+              Brutalism asks a different question: "does this boundary exist?"
+              If the answer is yes, draw it. Two pixels. Black. No radius.
+            </p>
+            <blockquote>
+              <p>
+                The building should look like what it is — not what we wish it were.
+              </p>
+            </blockquote>
+            <p>
+              This is not cruelty. It is clarity. When structure is visible,
+              the reader always knows where they are. Nothing is implied.
+              Use <code>border: 2px solid</code> — never <code>border: 1px solid</code>.
+            </p>
+            <figure>
+              <img
+                src="https://placehold.co/800x450/000000/ffffff?text=."
+                alt="Inline image"
+              />
+              <figcaption>Images are bordered. Hard edges only.</figcaption>
+            </figure>
+            <h2>Weight does the work</h2>
+            <ul>
+              <li>Oversized headings establish territory before the reader reads a word</li>
+              <li>Uppercase labels signal classification, not decoration</li>
+              <li>Thick borders separate without softening</li>
+            </ul>
+            <p>
+              Read the full argument in <a href="#">the essay on raw structure</a>.
+            </p>
+            <pre><code>:root {
+  --color-bg:     #ffffff;
+  --color-text:   #000000;
+  --color-accent: #ff3300;
+
+  --border: 2px solid #000000;
+  --shadow: 4px 4px 0 #000000;
+}</code></pre>
+            <p>
+              The shadow is solid, not blurred. It creates depth the honest way —
+              by describing physical displacement, not light diffusion.
+            </p>
+          </div>
+        </section>
+
+        <!-- Typography -->
+        <section>
+          <p class="section-label">Typography — System Heavy</p>
+          <div class="type-scale">
+            <div class="type-row">
+              <span class="type-meta">4xl / 700</span>
+              <h1>Heading One</h1>
+            </div>
+            <div class="type-row">
+              <span class="type-meta">3xl / 700</span>
+              <h2>Heading Two</h2>
+            </div>
+            <div class="type-row">
+              <span class="type-meta">2xl / 700</span>
+              <h3>Heading Three</h3>
+            </div>
+            <div class="type-row">
+              <span class="type-meta">base / 400</span>
+              <p>Body text. Dense, direct, functional.</p>
+            </div>
+            <div class="type-row">
+              <span class="type-meta">sm / 400</span>
+              <small>Small — metadata, labels, captions.</small>
+            </div>
+            <div class="type-row">
+              <span class="type-meta">mono / 400</span>
+              <code>border: 2px solid #000000;</code>
+            </div>
+          </div>
+        </section>
+
+        <!-- Color -->
+        <section>
+          <p class="section-label">Color</p>
+          <div class="palette">
+            <div class="swatch">
+              <div class="swatch-color" style="background: #ffffff"></div>
+              <span class="swatch-name">Background</span>
+              <span class="swatch-value">#ffffff</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background: #000000"></div>
+              <span class="swatch-name">Text</span>
+              <span class="swatch-value">#000000</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background: #ff3300"></div>
+              <span class="swatch-name">Accent</span>
+              <span class="swatch-value">#ff3300</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Buttons -->
+        <section>
+          <p class="section-label">Buttons</p>
+          <div class="btn-row">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+          </div>
+        </section>
+
+        <!-- Form -->
+        <section>
+          <p class="section-label">Form</p>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category">
+              <option value="" disabled selected>Select a category</option>
+              <option value="design">Design</option>
+              <option value="typography">Typography</option>
+              <option value="color">Color</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subscribe">
+              <input type="checkbox" id="subscribe" />
+              Subscribe to updates
+            </label>
+          </div>
+          <div class="form-group">
+            <span class="form-label">Preference</span>
+            <div class="form-radio-group">
+              <label for="pref-brutal">
+                <input type="radio" id="pref-brutal" name="preference" value="brutal" checked />
+                Brutal
+              </label>
+              <label for="pref-soft">
+                <input type="radio" id="pref-soft" name="preference" value="soft" />
+                Soft
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Say something direct..."></textarea>
+          </div>
+          <button class="btn btn-primary">Submit</button>
+        </section>
+
+        <!-- Code -->
+        <section>
+          <p class="section-label">Code</p>
+          <div class="code-block">
+            <pre>
+:root {
+  --color-bg:     #ffffff;
+  --color-text:   #000000;
+  --color-accent: #ff3300;
+
+  --border: 2px solid #000000;
+  --shadow: 4px 4px 0 #000000;
+}</pre>
+          </div>
+        </section>
+
+        <!-- Stats -->
+        <section>
+          <p class="section-label">At a glance</p>
+          <div class="stat-grid">
+            <div class="stat-item">
+              <p class="stat-value">2px</p>
+              <p class="stat-label">Min border</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">3</p>
+              <p class="stat-label">Colors</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">0</p>
+              <p class="stat-label">Border radius</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">0</p>
+              <p class="stat-label">Blur shadows</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+        <span>Brutalism Style</span>
+        <span>Structure is the design.</span>
+      </footer>
+    </div>
+  </body>
+</html>
