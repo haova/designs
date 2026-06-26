@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimalism Style</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="site-header">
+        <span class="site-name">Minimal</span>
+        <nav class="site-nav">
+          <a href="#">Writing</a>
+          <a href="#">About</a>
+          <a href="#">Archive</a>
+        </nav>
+      </header>
+
+      <div class="showcase">
+        <!-- Hero -->
+        <section class="hero">
+          <p class="hero-tag">Design Style</p>
+          <h1>Remove until it breaks. Then stop.</h1>
+          <p>
+            A principle-driven visual language. Not a fixed set of rules — a way of deciding.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">Read more</button>
+            <button class="btn btn-secondary">About</button>
+          </div>
+        </section>
+
+        <!-- Article list -->
+        <section>
+          <p class="section-label">Articles</p>
+          <div class="article-list">
+            <div class="article-item">
+              <div>
+                <p class="article-category">Design</p>
+                <p class="article-title">The case for removing everything</p>
+                <p class="article-excerpt">
+                  Minimalism is not a lack of something. It is the perfect
+                  amount of something.
+                </p>
+              </div>
+              <span class="article-date">2026-06-20</span>
+            </div>
+            <div class="article-item">
+              <div>
+                <p class="article-category">Typography</p>
+                <p class="article-title">Why one typeface is enough</p>
+                <p class="article-excerpt">
+                  Mixing fonts rarely adds clarity. It usually adds noise.
+                </p>
+              </div>
+              <span class="article-date">2026-06-12</span>
+            </div>
+            <div class="article-item">
+              <div>
+                <p class="article-category">Color</p>
+                <p class="article-title">Color is a decision, not a default</p>
+                <p class="article-excerpt">
+                  Start with one color. Add a second only when the first cannot do the job.
+                </p>
+              </div>
+              <span class="article-date">2026-05-30</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Rich text -->
+        <section>
+          <p class="section-label">Rich Text</p>
+          <div class="article-header">
+            <p class="article-header-category">Design</p>
+            <h1 class="article-header-title">The case for removing everything</h1>
+            <p class="article-header-date">2026-06-20</p>
+          </div>
+          <div class="rich-text">
+            <figure class="fig-hero">
+              <img
+                src="https://placehold.co/1200x600/1a1a1a/ffffff?text=."
+                alt="Hero image"
+              />
+              <figcaption>
+                A single image. No caption unless the image cannot speak for itself.
+              </figcaption>
+            </figure>
+            <p>
+              Minimalism is not a look. It is a method of reduction. The result varies;
+              the process does not. Every designer eventually confronts the question:
+              what stays, and what goes?
+            </p>
+            <p>The answer is uncomfortable. Most things go.</p>
+            <h2>Start with subtraction</h2>
+            <p>
+              Before adding anything to a layout, ask what already exists that
+              could be removed. A border that defines space can often be
+              replaced by whitespace alone. A label that explains a field can
+              often be replaced by a clear placeholder.
+            </p>
+            <blockquote>
+              <p>
+                Perfection is achieved not when there is nothing more to add,
+                but when there is nothing left to take away.
+              </p>
+            </blockquote>
+            <p>
+              This applies to color, typefaces, and motion just as much as layout.
+              Each addition must earn its place.
+            </p>
+            <h2>Hierarchy without decoration</h2>
+            <p>
+              Strong hierarchy does not require color. It requires contrast — in
+              size, weight, and spacing. Consider what you can communicate with:
+            </p>
+            <ul>
+              <li>Size — large text commands attention</li>
+              <li>Weight — bold separates signal from noise</li>
+              <li>Space — distance implies relationship</li>
+            </ul>
+            <p>
+              When those three tools are used with discipline, color becomes
+              optional. Use <code>font-weight: 700</code> for headings,
+              <code>font-weight: 400</code> for body. Nothing in between.
+            </p>
+            <figure>
+              <img
+                src="https://placehold.co/800x450/1a1a1a/ffffff?text=."
+                alt="Inline image"
+              />
+              <figcaption>
+                Inline images span the full content width. Captions are small, left-aligned.
+              </figcaption>
+            </figure>
+            <h2>What remains</h2>
+            <p>
+              After removing everything unnecessary, what remains is content.
+              The reader arrives at the words without friction. Read more about
+              this in <a href="#">the full essay</a>.
+            </p>
+            <pre><code>:root {
+  --color-bg:   #ffffff;
+  --color-text: #1a1a1a;
+  --color-accent: #2563eb;
+
+  --font-sans: system-ui, sans-serif;
+  --weight-regular: 400;
+  --weight-bold:    700;
+}</code></pre>
+            <p>
+              These are the only variables the design needs. Every decision
+              flows from them. Nothing is added without a reason.
+            </p>
+          </div>
+        </section>
+
+        <!-- Typography -->
+        <section>
+          <p class="section-label">Typography — System UI</p>
+          <div class="type-scale">
+            <div class="type-row">
+              <span class="type-meta">4xl / 700</span>
+              <h1>Heading One</h1>
+            </div>
+            <div class="type-row">
+              <span class="type-meta">3xl / 700</span>
+              <h2>Heading Two</h2>
+            </div>
+            <div class="type-row">
+              <span class="type-meta">2xl / 700</span>
+              <h3>Heading Three</h3>
+            </div>
+            <div class="type-row">
+              <span class="type-meta">base / 400</span>
+              <p>
+                Body text. Clear, readable, unhurried. Line-height gives words
+                room to breathe.
+              </p>
+            </div>
+            <div class="type-row">
+              <span class="type-meta">sm / 400</span>
+              <small>Small — metadata, labels, captions.</small>
+            </div>
+            <div class="type-row">
+              <span class="type-meta">mono / 400</span>
+              <code>const palette = ["#ffffff", "#1a1a1a", "#2563eb"];</code>
+            </div>
+          </div>
+        </section>
+
+        <!-- Color -->
+        <section>
+          <p class="section-label">Color</p>
+          <div class="palette">
+            <div class="swatch">
+              <div class="swatch-color" style="background: #ffffff"></div>
+              <span class="swatch-name">Background</span>
+              <span class="swatch-value">#ffffff</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background: #1a1a1a"></div>
+              <span class="swatch-name">Text</span>
+              <span class="swatch-value">#1a1a1a</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background: #767676"></div>
+              <span class="swatch-name">Muted</span>
+              <span class="swatch-value">#767676</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background: #2563eb"></div>
+              <span class="swatch-name">Accent</span>
+              <span class="swatch-value">#2563eb</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Buttons -->
+        <section>
+          <p class="section-label">Buttons</p>
+          <div class="btn-row">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+          </div>
+        </section>
+
+        <!-- Form -->
+        <section>
+          <p class="section-label">Form</p>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category">
+              <option value="" disabled selected>Select a category</option>
+              <option value="design">Design</option>
+              <option value="typography">Typography</option>
+              <option value="color">Color</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="subscribe">
+              <input type="checkbox" id="subscribe" />
+              Subscribe to updates
+            </label>
+          </div>
+          <div class="form-group">
+            <span class="form-label">Preference</span>
+            <div class="form-radio-group">
+              <label for="pref-minimal">
+                <input type="radio" id="pref-minimal" name="preference" value="minimal" checked />
+                Minimal
+              </label>
+              <label for="pref-classic">
+                <input type="radio" id="pref-classic" name="preference" value="classic" />
+                Classic
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Say something..."></textarea>
+          </div>
+          <button class="btn btn-primary">Submit</button>
+        </section>
+
+        <!-- Code -->
+        <section>
+          <p class="section-label">Code</p>
+          <div class="code-block">
+            <pre>
+:root {
+  --color-bg:     #ffffff;
+  --color-text:   #1a1a1a;
+  --color-accent: #2563eb;
+
+  --font-sans: system-ui, sans-serif;
+}</pre>
+          </div>
+        </section>
+
+        <!-- Stats -->
+        <section>
+          <p class="section-label">At a glance</p>
+          <div class="stat-grid">
+            <div>
+              <p class="stat-value">1</p>
+              <p class="stat-label">Rule</p>
+            </div>
+            <div>
+              <p class="stat-value">3</p>
+              <p class="stat-label">Questions</p>
+            </div>
+            <div>
+              <p class="stat-value">0</p>
+              <p class="stat-label">Decorations</p>
+            </div>
+            <div>
+              <p class="stat-value">∞</p>
+              <p class="stat-label">Outputs</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+        <span>Minimalism Style</span>
+        <span>Remove until it breaks. Then stop.</span>
+      </footer>
+    </div>
+  </body>
+</html>
