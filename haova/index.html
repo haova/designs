@@ -6,13 +6,14 @@
     <title>HaoVA Style</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <div class="container">
       <!-- Header -->
-      <header class="site-header">
-        <span class="site-name">HaoVA</span>
-        <nav class="site-nav">
+      <header class="site__header">
+        <span class="site__name">HaoVA</span>
+        <nav class="site__nav">
           <a href="#">Writing</a>
           <a href="#">About</a>
           <a href="#">Archive</a>
@@ -22,15 +23,15 @@
       <div class="showcase">
         <!-- Hero -->
         <section class="hero">
-          <p class="hero-tag">Design Style</p>
+          <p class="hero__tag">Design Style</p>
           <h1>Only what is necessary.</h1>
           <p>
             A design language built on restraint — two colors, one typeface, no
             decoration.
           </p>
-          <div class="hero-actions">
-            <button class="btn btn-primary">Read more</button>
-            <button class="btn btn-secondary">About</button>
+          <div class="hero__actions">
+            <button class="btn btn--primary">Read more</button>
+            <button class="btn btn--secondary">About</button>
           </div>
         </section>
 
@@ -40,35 +41,35 @@
           <div class="article-list">
             <div class="article-item">
               <div>
-                <p class="article-category">Design</p>
-                <p class="article-title">The case for removing everything</p>
-                <p class="article-excerpt">
+                <p class="article-item__category">Design</p>
+                <p class="article-item__title">The case for removing everything</p>
+                <p class="article-item__excerpt">
                   Minimalism is not a lack of something. It is the perfect
                   amount of something.
                 </p>
               </div>
-              <span class="article-date">2026-06-20</span>
+              <span class="article-item__date">2026-06-20</span>
             </div>
             <div class="article-item">
               <div>
-                <p class="article-category">Typography</p>
-                <p class="article-title">Why one typeface is enough</p>
-                <p class="article-excerpt">
+                <p class="article-item__category">Typography</p>
+                <p class="article-item__title">Why one typeface is enough</p>
+                <p class="article-item__excerpt">
                   Mixing fonts rarely adds clarity. It usually adds noise.
                 </p>
               </div>
-              <span class="article-date">2026-06-12</span>
+              <span class="article-item__date">2026-06-12</span>
             </div>
             <div class="article-item">
               <div>
-                <p class="article-category">Color</p>
-                <p class="article-title">Black and white is not a limitation</p>
-                <p class="article-excerpt">
+                <p class="article-item__category">Color</p>
+                <p class="article-item__title">Black and white is not a limitation</p>
+                <p class="article-item__excerpt">
                   Two colors force you to solve layout problems with structure,
                   not decoration.
                 </p>
               </div>
-              <span class="article-date">2026-05-30</span>
+              <span class="article-item__date">2026-05-30</span>
             </div>
           </div>
         </section>
@@ -77,9 +78,9 @@
         <section>
           <p class="section-label">Rich Text</p>
           <div class="article-header">
-            <p class="article-header-category">Design</p>
-            <h1 class="article-header-title">The case for removing everything</h1>
-            <p class="article-header-date">2026-06-20</p>
+            <p class="article-header__category">Design</p>
+            <h1 class="article-header__title">The case for removing everything</h1>
+            <p class="article-header__date">2026-06-20</p>
           </div>
           <div class="rich-text">
             <figure class="fig-hero">
@@ -165,31 +166,31 @@
         <section>
           <p class="section-label">Typography — Castledown</p>
           <div class="type-scale">
-            <div class="type-row">
-              <span class="type-meta">4xl / 700</span>
+            <div class="type-scale__row">
+              <span class="type-scale__meta">4xl / 700</span>
               <h1>Heading One</h1>
             </div>
-            <div class="type-row">
-              <span class="type-meta">3xl / 700</span>
+            <div class="type-scale__row">
+              <span class="type-scale__meta">3xl / 700</span>
               <h2>Heading Two</h2>
             </div>
-            <div class="type-row">
-              <span class="type-meta">2xl / 700</span>
+            <div class="type-scale__row">
+              <span class="type-scale__meta">2xl / 700</span>
               <h3>Heading Three</h3>
             </div>
-            <div class="type-row">
-              <span class="type-meta">base / 400</span>
+            <div class="type-scale__row">
+              <span class="type-scale__meta">base / 400</span>
               <p>
                 Body text. Clear, readable, unhurried. Line-height gives words
                 room to breathe.
               </p>
             </div>
-            <div class="type-row">
-              <span class="type-meta">sm / 400</span>
+            <div class="type-scale__row">
+              <span class="type-scale__meta">sm / 400</span>
               <small>Small — metadata, labels, captions.</small>
             </div>
-            <div class="type-row">
-              <span class="type-meta">mono / 400</span>
+            <div class="type-scale__row">
+              <span class="type-scale__meta">mono / 400</span>
               <code>const palette = ["#ffffff", "#000000"];</code>
             </div>
           </div>
@@ -200,14 +201,14 @@
           <p class="section-label">Color</p>
           <div class="palette">
             <div class="swatch">
-              <div class="swatch-color" style="background: #ffffff"></div>
-              <span class="swatch-name">Background</span>
-              <span class="swatch-value">#ffffff</span>
+              <div class="swatch__color" style="background: #ffffff"></div>
+              <span class="swatch__name">Background</span>
+              <span class="swatch__value">#ffffff</span>
             </div>
             <div class="swatch">
-              <div class="swatch-color" style="background: #000000"></div>
-              <span class="swatch-name">Text</span>
-              <span class="swatch-value">#000000</span>
+              <div class="swatch__color" style="background: #000000"></div>
+              <span class="swatch__name">Text</span>
+              <span class="swatch__value">#000000</span>
             </div>
           </div>
         </section>
@@ -216,23 +217,23 @@
         <section>
           <p class="section-label">Buttons</p>
           <div class="btn-row">
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn--primary">Primary</button>
+            <button class="btn btn--secondary">Secondary</button>
           </div>
         </section>
 
         <!-- Form -->
         <section>
           <p class="section-label">Form</p>
-          <div class="form-group">
+          <div class="form__group">
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Your name" />
           </div>
-          <div class="form-group">
+          <div class="form__group">
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="you@example.com" />
           </div>
-          <div class="form-group">
+          <div class="form__group">
             <label for="category">Category</label>
             <select id="category">
               <option value="" disabled selected>Select a category</option>
@@ -241,15 +242,15 @@
               <option value="color">Color</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form__group">
             <label for="subscribe">
               <input type="checkbox" id="subscribe" />
               Subscribe to updates
             </label>
           </div>
-          <div class="form-group">
-            <span class="form-label">Preference</span>
-            <div class="form-radio-group">
+          <div class="form__group">
+            <span class="form__label">Preference</span>
+            <div class="form__radio-group">
               <label for="pref-minimal">
                 <input type="radio" id="pref-minimal" name="preference" value="minimal" checked />
                 Minimal
@@ -260,11 +261,11 @@
               </label>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form__group">
             <label for="message">Message</label>
             <textarea id="message" placeholder="Say something..."></textarea>
           </div>
-          <button class="btn btn-primary">Submit</button>
+          <button class="btn btn--primary">Submit</button>
         </section>
 
         <!-- Code -->
@@ -287,26 +288,26 @@
           <p class="section-label">At a glance</p>
           <div class="stat-grid">
             <div>
-              <p class="stat-value">2</p>
-              <p class="stat-label">Colors</p>
+              <p class="stat-grid__value">2</p>
+              <p class="stat-grid__label">Colors</p>
             </div>
             <div>
-              <p class="stat-value">1</p>
-              <p class="stat-label">Typeface</p>
+              <p class="stat-grid__value">1</p>
+              <p class="stat-grid__label">Typeface</p>
             </div>
             <div>
-              <p class="stat-value">0</p>
-              <p class="stat-label">Gradients</p>
+              <p class="stat-grid__value">0</p>
+              <p class="stat-grid__label">Gradients</p>
             </div>
             <div>
-              <p class="stat-value">0</p>
-              <p class="stat-label">Shadows</p>
+              <p class="stat-grid__value">0</p>
+              <p class="stat-grid__label">Shadows</p>
             </div>
           </div>
         </section>
       </div>
 
-      <footer class="site-footer">
+      <footer class="site__footer">
         <span>HaoVA Style</span>
         <span>Only what is necessary.</span>
       </footer>

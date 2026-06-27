@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — HaoVA</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <span class="site__name">HaoVA</span>
+        </div>
+        <nav class="sidebar__nav">
+          <a href="#" class="sidebar__link sidebar__link--active">Overview</a>
+          <a href="#" class="sidebar__link">Articles</a>
+          <a href="#" class="sidebar__link">Comments</a>
+          <a href="#" class="sidebar__link">Media</a>
+          <a href="#" class="sidebar__link">Users</a>
+          <a href="#" class="sidebar__link">Settings</a>
+        </nav>
+        <div class="sidebar__footer">
+          <span class="sidebar__user">hi@haova.me</span>
+          <a href="#" class="sidebar__link">Sign out</a>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div class="dashboard__main">
+        <!-- Top bar -->
+        <header class="topbar">
+          <div>
+            <p class="topbar__section">Admin</p>
+            <h1 class="topbar__title">Overview</h1>
+          </div>
+          <div class="topbar__actions">
+            <button class="btn btn--secondary">Export</button>
+            <button class="btn btn--primary">New article</button>
+          </div>
+        </header>
+
+        <main class="dashboard__content">
+          <!-- Stats -->
+          <section class="dash__section">
+            <p class="section-label">At a glance</p>
+            <div class="dash__stat-grid">
+              <div class="dash__stat">
+                <p class="dash__stat-value">128</p>
+                <p class="dash__stat-label">Articles published</p>
+              </div>
+              <div class="dash__stat">
+                <p class="dash__stat-value">4,821</p>
+                <p class="dash__stat-label">Total views</p>
+              </div>
+              <div class="dash__stat">
+                <p class="dash__stat-value">312</p>
+                <p class="dash__stat-label">Comments</p>
+              </div>
+              <div class="dash__stat">
+                <p class="dash__stat-value">47</p>
+                <p class="dash__stat-label">Subscribers</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Recent articles -->
+          <section class="dash__section">
+            <p class="section-label">Recent articles</p>
+            <div class="article-list">
+              <div class="article-item">
+                <div>
+                  <p class="article-item__category">Design</p>
+                  <p class="article-item__title">The case for removing everything</p>
+                  <p class="article-item__excerpt">
+                    Minimalism is not a lack of something. It is the perfect amount of something.
+                  </p>
+                </div>
+                <div class="article-item__meta">
+                  <span class="article-item__date">2026-06-20</span>
+                  <span class="badge badge--published">Published</span>
+                </div>
+              </div>
+              <div class="article-item">
+                <div>
+                  <p class="article-item__category">Typography</p>
+                  <p class="article-item__title">Why one typeface is enough</p>
+                  <p class="article-item__excerpt">
+                    Mixing fonts rarely adds clarity. It usually adds noise.
+                  </p>
+                </div>
+                <div class="article-item__meta">
+                  <span class="article-item__date">2026-06-12</span>
+                  <span class="badge badge--draft">Draft</span>
+                </div>
+              </div>
+              <div class="article-item">
+                <div>
+                  <p class="article-item__category">Color</p>
+                  <p class="article-item__title">Black and white is not a limitation</p>
+                  <p class="article-item__excerpt">
+                    Two colors force you to solve layout problems with structure, not decoration.
+                  </p>
+                </div>
+                <div class="article-item__meta">
+                  <span class="article-item__date">2026-05-30</span>
+                  <span class="badge badge--published">Published</span>
+                </div>
+              </div>
+              <div class="article-item">
+                <div>
+                  <p class="article-item__category">Layout</p>
+                  <p class="article-item__title">Whitespace is not empty space</p>
+                  <p class="article-item__excerpt">
+                    Every gap carries meaning. Proximity implies relationship.
+                  </p>
+                </div>
+                <div class="article-item__meta">
+                  <span class="article-item__date">2026-05-14</span>
+                  <span class="badge badge--draft">Draft</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Two-column: comments + quick publish -->
+          <div class="dash__columns">
+            <!-- Recent comments -->
+            <section class="dash__section">
+              <p class="section-label">Recent comments</p>
+              <div class="comment-list">
+                <div class="comment-item">
+                  <div class="comment-item__meta">
+                    <span class="comment-item__author">Lea Rousseau</span>
+                    <span class="comment-item__date">2026-06-22</span>
+                  </div>
+                  <p class="comment-item__on">On: <a href="#">The case for removing everything</a></p>
+                  <p class="comment-item__body">
+                    This piece changed how I think about sidebar navigation. Less really is more.
+                  </p>
+                </div>
+                <div class="comment-item">
+                  <div class="comment-item__meta">
+                    <span class="comment-item__author">Marcus Webb</span>
+                    <span class="comment-item__date">2026-06-18</span>
+                  </div>
+                  <p class="comment-item__on">On: <a href="#">Why one typeface is enough</a></p>
+                  <p class="comment-item__body">
+                    Finally someone said it. Font pairing culture has gone too far.
+                  </p>
+                </div>
+                <div class="comment-item">
+                  <div class="comment-item__meta">
+                    <span class="comment-item__author">Yuki Tanaka</span>
+                    <span class="comment-item__date">2026-06-10</span>
+                  </div>
+                  <p class="comment-item__on">On: <a href="#">Black and white is not a limitation</a></p>
+                  <p class="comment-item__body">
+                    The constraint forces you to solve real problems. Agreed completely.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Quick publish form -->
+            <section class="dash__section">
+              <p class="section-label">Quick publish</p>
+              <div class="form__group">
+                <label for="q-title">Title</label>
+                <input type="text" id="q-title" placeholder="Article title" />
+              </div>
+              <div class="form__group">
+                <label for="q-category">Category</label>
+                <select id="q-category">
+                  <option value="" disabled selected>Select a category</option>
+                  <option value="design">Design</option>
+                  <option value="typography">Typography</option>
+                  <option value="color">Color</option>
+                  <option value="layout">Layout</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label for="q-excerpt">Excerpt</label>
+                <textarea id="q-excerpt" placeholder="One sentence summary..."></textarea>
+              </div>
+              <div class="form__group">
+                <span class="form__label">Status</span>
+                <div class="form__radio-group">
+                  <label for="s-draft">
+                    <input type="radio" id="s-draft" name="status" value="draft" checked />
+                    Save as draft
+                  </label>
+                  <label for="s-publish">
+                    <input type="radio" id="s-publish" name="status" value="publish" />
+                    Publish immediately
+                  </label>
+                </div>
+              </div>
+              <div class="btn-row">
+                <button class="btn btn--primary">Save</button>
+                <button class="btn btn--secondary">Cancel</button>
+              </div>
+            </section>
+          </div>
+        </main>
+
+        <footer class="site__footer dashboard__footer">
+          <span>HaoVA Admin</span>
+          <span>Only what is necessary.</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
