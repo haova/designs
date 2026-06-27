@@ -27,7 +27,7 @@ UI recedes. Writing is the identity.
 
 ## Heading Scale
 
-### Inside rich text
+### Inside prose
 
 Before changing any heading size, verify all lower levels remain smaller than the level above.
 
@@ -44,7 +44,8 @@ Before changing any heading size, verify all lower levels remain smaller than th
 ## Layout
 
 - Max container width: `72rem`.
-- Rich text line length: `max-width: 66ch`.
+- Prose line length: `max-width: 66ch`. Centered with `margin-inline: auto` — the block is centered, text remains left-aligned.
+- Article header follows the same width and centering as prose.
 - No border-radius. No shadows (unless strictly required for elevation).
 - No gradients.
 
@@ -57,7 +58,7 @@ Order: category → title → date. All on separate lines.
 - **Date** — least important. Readers care _what_ before _when_.
 - Category and date use the same size (`sm`) and the same font. No mono, no decoration.
 
-## Rich Text Rules
+## Prose Rules
 
 - Paragraph spacing: `margin-bottom: 1rem`.
 - Heading margins: top > bottom — pulls away from the previous block, stays close to its own content.
@@ -112,7 +113,7 @@ A horizontal line means: something ends here, something else begins.
 Use only when that boundary is necessary:
 
 - Between list items that blur together without it.
-- In rich text as a semantic scene break.
+- In prose as a semantic scene break.
 - As a structural border (header bottom, footer top).
 
 If whitespace alone communicates the separation, the line is not needed.

@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Castledown";
-  src: url("../fonts/castledown-regular.woff2") format("woff2"),
-       url("../fonts/castledown-regular.ttf") format("truetype");
+  src:
+    url("../fonts/castledown-regular.woff2") format("woff2"),
+    url("../fonts/castledown-regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,8 +10,9 @@
 
 @font-face {
   font-family: "Castledown";
-  src: url("../fonts/castledown-heavy.woff") format("woff"),
-       url("../fonts/castledown-heavy.ttf") format("truetype");
+  src:
+    url("../fonts/castledown-heavy.woff") format("woff"),
+    url("../fonts/castledown-heavy.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -79,7 +81,7 @@
 /* Base */
 
 html {
-  font-size: 16px;
+  font-size: clamp(16px, 1.1vw, 20px);
 }
 
 body {
@@ -93,18 +95,35 @@ body {
 
 /* Typography */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--weight-bold);
   line-height: var(--leading-tight);
   letter-spacing: -0.01em;
 }
 
-h1 { font-size: var(--text-4xl); }
-h2 { font-size: var(--text-3xl); }
-h3 { font-size: var(--text-2xl); }
-h4 { font-size: var(--text-xl); }
-h5 { font-size: var(--text-lg); }
-h6 { font-size: var(--text-base); }
+h1 {
+  font-size: var(--text-4xl);
+}
+h2 {
+  font-size: var(--text-3xl);
+}
+h3 {
+  font-size: var(--text-2xl);
+}
+h4 {
+  font-size: var(--text-xl);
+}
+h5 {
+  font-size: var(--text-lg);
+}
+h6 {
+  font-size: var(--text-base);
+}
 
 p {
   line-height: var(--leading-normal);
@@ -114,7 +133,8 @@ small {
   font-size: var(--text-sm);
 }
 
-code, pre {
+code,
+pre {
   font-family: var(--font-mono);
   font-size: var(--text-sm);
 }
@@ -144,7 +164,8 @@ a:hover {
 
 /* Components */
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -289,6 +310,8 @@ table {
 /* Article header */
 
 .article-header {
+  max-width: 66ch;
+  margin-inline: auto;
   padding-bottom: var(--space-12);
 }
 
@@ -312,99 +335,100 @@ table {
 
 /* Rich text */
 
-.rich-text {
+.prose {
   max-width: 66ch;
+  margin-inline: auto;
 }
 
-.rich-text > :first-child {
+.prose > :first-child {
   margin-top: 0;
 }
 
-.rich-text h2 {
+.prose h2 {
   font-size: clamp(1.5rem, 3vw, var(--text-3xl));
   margin-top: var(--space-12);
   margin-bottom: var(--space-4);
 }
 
-.rich-text h3 {
+.prose h3 {
   font-size: clamp(1.25rem, 2.5vw, 1.375rem);
   margin-top: var(--space-8);
   margin-bottom: var(--space-3);
 }
 
-.rich-text h4 {
+.prose h4 {
   font-size: var(--text-base);
   margin-top: var(--space-6);
   margin-bottom: var(--space-2);
 }
 
-.rich-text h5,
-.rich-text h6 {
+.prose h5,
+.prose h6 {
   font-size: var(--text-base);
   margin-top: var(--space-4);
   margin-bottom: var(--space-2);
 }
 
-.rich-text p {
+.prose p {
   font-size: var(--text-base);
   line-height: var(--leading-normal);
   margin-bottom: var(--space-4);
 }
 
-.rich-text ul {
+.prose ul {
   padding-left: var(--space-6);
   margin-bottom: var(--space-4);
 }
 
-.rich-text ul li {
+.prose ul li {
   list-style: disc;
   line-height: var(--leading-normal);
   margin-bottom: var(--space-2);
 }
 
-.rich-text blockquote {
+.prose blockquote {
   border-left: 2px solid var(--color-text);
   padding-left: var(--space-6);
   margin-block: var(--space-8);
 }
 
-.rich-text blockquote p {
+.prose blockquote p {
   font-size: var(--text-lg);
   line-height: var(--leading-snug);
   margin-bottom: 0;
 }
 
-.rich-text figure {
+.prose figure {
   margin-block: var(--space-8);
 }
 
-.rich-text figure img {
+.prose figure img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.rich-text figcaption {
+.prose figcaption {
   font-size: var(--text-sm);
   margin-top: var(--space-2);
 }
 
-.rich-text .fig-hero img {
+.prose .fig-hero img {
   width: 100%;
   aspect-ratio: 2 / 1;
   object-fit: cover;
 }
 
-.rich-text a {
+.prose a {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.rich-text a:hover {
+.prose a:hover {
   text-decoration: none;
 }
 
-.rich-text pre {
+.prose pre {
   border: 1px solid var(--color-text);
   padding: var(--space-6);
   overflow-x: auto;
@@ -412,7 +436,7 @@ table {
   line-height: 1.7;
 }
 
-.rich-text code {
+.prose code {
   font-family: var(--font-mono);
   font-size: 0.875em;
   background: var(--color-text);
@@ -420,7 +444,7 @@ table {
   padding: 0.1em 0.35em;
 }
 
-.rich-text pre code {
+.prose pre code {
   background: none;
   color: var(--color-text);
   padding: 0;
