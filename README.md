@@ -283,10 +283,29 @@ Copy the `base/` directory and rename it. It contains:
 
 Then add the new style to the table below.
 
+## Dashboard component checklist
+
+For dashboard styles, ensure the following components are present:
+
+- **Shell** — sidebar, topbar, content area. The fixed layout frame of the entire app.
+- **Navigation** — sidebar links with active state and section groupings.
+- **Typography scale** — compact heading hierarchy, uppercase section label, body, mono.
+- **Color palette** — background, text, accent, border, muted, success, warning, danger.
+- **Buttons** — primary, secondary, danger, disabled state.
+- **Badges** — success, warning, danger, neutral. Used inline to communicate status.
+- **Stat cards** — large value with small label. Summary metrics at a glance.
+- **Cards / Panels** — surface with border, header separated from body.
+- **Table** — uppercase muted header, row hover, right-aligned numeric columns, badge status.
+- **Form** — input, select, textarea, checkbox, radio, file input.
+- **Dialog** — confirm, form, danger variants. Use native `<dialog>` with backdrop.
+- **Dropdown** — button-triggered floating menu, auto-repositions near viewport edges.
+- **Toast** — temporary corner notification, variants follow the status palette.
+
 ## Styles
 
-| Directory                    | Style       | Core idea                                               |
-| ---------------------------- | ----------- | ------------------------------------------------------- |
-| [`haova/`](haova/)           | HaoVA Style | Two colors, one typeface, no decoration. Content leads. |
-| [`minimalism/`](minimalism/) | Minimalism  | Every element must justify its existence.               |
-| [`brutalism/`](brutalism/)   | Brutalism   | Structure is visible. Nothing is hidden.                |
+| Directory                              | Style           | Core idea                                               |
+| -------------------------------------- | --------------- | ------------------------------------------------------- |
+| [`haova/`](haova/)                     | HaoVA Style     | Two colors, one typeface, no decoration. Content leads. |
+| [`haova-dashboard/`](haova-dashboard/) | HaoVA Dashboard | Minimalism applied to data-driven interfaces.           |
+| [`minimalism/`](minimalism/)           | Minimalism      | Every element must justify its existence.               |
+| [`brutalism/`](brutalism/)             | Brutalism       | Structure is visible. Nothing is hidden.                |

@@ -38,8 +38,15 @@
             <h1 class="topbar__title">Overview</h1>
           </div>
           <div class="topbar__actions">
-            <button class="btn btn--secondary">Export</button>
-            <button class="btn btn--primary">New article</button>
+            <button class="btn btn--secondary" onclick="showToast('neutral', 'Export started.')">Export</button>
+            <div class="dropdown">
+              <button class="btn btn--primary dropdown__trigger">New article</button>
+              <ul class="dropdown__menu">
+                <li><button class="dropdown__item" onclick="document.getElementById('dialog-new').showModal()">Write now</button></li>
+                <li><button class="dropdown__item">Import from file</button></li>
+                <li><button class="dropdown__item">Duplicate existing</button></li>
+              </ul>
+            </div>
           </div>
         </header>
 
@@ -67,62 +74,96 @@
             </div>
           </section>
 
-          <!-- Recent articles -->
+          <!-- Articles table -->
           <section class="dash__section">
             <p class="section-label">Recent articles</p>
-            <div class="article-list">
-              <div class="article-item">
-                <div>
-                  <p class="article-item__category">Design</p>
-                  <p class="article-item__title">The case for removing everything</p>
-                  <p class="article-item__excerpt">
-                    Minimalism is not a lack of something. It is the perfect amount of something.
-                  </p>
-                </div>
-                <div class="article-item__meta">
-                  <span class="article-item__date">2026-06-20</span>
-                  <span class="badge badge--published">Published</span>
-                </div>
-              </div>
-              <div class="article-item">
-                <div>
-                  <p class="article-item__category">Typography</p>
-                  <p class="article-item__title">Why one typeface is enough</p>
-                  <p class="article-item__excerpt">
-                    Mixing fonts rarely adds clarity. It usually adds noise.
-                  </p>
-                </div>
-                <div class="article-item__meta">
-                  <span class="article-item__date">2026-06-12</span>
-                  <span class="badge badge--draft">Draft</span>
-                </div>
-              </div>
-              <div class="article-item">
-                <div>
-                  <p class="article-item__category">Color</p>
-                  <p class="article-item__title">Black and white is not a limitation</p>
-                  <p class="article-item__excerpt">
-                    Two colors force you to solve layout problems with structure, not decoration.
-                  </p>
-                </div>
-                <div class="article-item__meta">
-                  <span class="article-item__date">2026-05-30</span>
-                  <span class="badge badge--published">Published</span>
-                </div>
-              </div>
-              <div class="article-item">
-                <div>
-                  <p class="article-item__category">Layout</p>
-                  <p class="article-item__title">Whitespace is not empty space</p>
-                  <p class="article-item__excerpt">
-                    Every gap carries meaning. Proximity implies relationship.
-                  </p>
-                </div>
-                <div class="article-item__meta">
-                  <span class="article-item__date">2026-05-14</span>
-                  <span class="badge badge--draft">Draft</span>
-                </div>
-              </div>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th class="col-num">Views</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>The case for removing everything</td>
+                    <td>Design</td>
+                    <td><span class="badge badge--published">Published</span></td>
+                    <td class="col-muted">2026-06-20</td>
+                    <td class="col-num">1,204</td>
+                    <td class="col-action">
+                      <div class="dropdown">
+                        <button class="dropdown__trigger icon-btn">···</button>
+                        <ul class="dropdown__menu">
+                          <li><button class="dropdown__item">Edit</button></li>
+                          <li><button class="dropdown__item">Duplicate</button></li>
+                          <li class="dropdown__divider"></li>
+                          <li><button class="dropdown__item dropdown__item--danger" onclick="document.getElementById('dialog-delete').showModal()">Delete</button></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Why one typeface is enough</td>
+                    <td>Typography</td>
+                    <td><span class="badge badge--draft">Draft</span></td>
+                    <td class="col-muted">2026-06-12</td>
+                    <td class="col-num">—</td>
+                    <td class="col-action">
+                      <div class="dropdown">
+                        <button class="dropdown__trigger icon-btn">···</button>
+                        <ul class="dropdown__menu">
+                          <li><button class="dropdown__item">Edit</button></li>
+                          <li><button class="dropdown__item">Duplicate</button></li>
+                          <li class="dropdown__divider"></li>
+                          <li><button class="dropdown__item dropdown__item--danger" onclick="document.getElementById('dialog-delete').showModal()">Delete</button></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Black and white is not a limitation</td>
+                    <td>Color</td>
+                    <td><span class="badge badge--published">Published</span></td>
+                    <td class="col-muted">2026-05-30</td>
+                    <td class="col-num">983</td>
+                    <td class="col-action">
+                      <div class="dropdown">
+                        <button class="dropdown__trigger icon-btn">···</button>
+                        <ul class="dropdown__menu">
+                          <li><button class="dropdown__item">Edit</button></li>
+                          <li><button class="dropdown__item">Duplicate</button></li>
+                          <li class="dropdown__divider"></li>
+                          <li><button class="dropdown__item dropdown__item--danger" onclick="document.getElementById('dialog-delete').showModal()">Delete</button></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Whitespace is not empty space</td>
+                    <td>Layout</td>
+                    <td><span class="badge badge--draft">Draft</span></td>
+                    <td class="col-muted">2026-05-14</td>
+                    <td class="col-num">—</td>
+                    <td class="col-action">
+                      <div class="dropdown">
+                        <button class="dropdown__trigger icon-btn">···</button>
+                        <ul class="dropdown__menu">
+                          <li><button class="dropdown__item">Edit</button></li>
+                          <li><button class="dropdown__item">Duplicate</button></li>
+                          <li class="dropdown__divider"></li>
+                          <li><button class="dropdown__item dropdown__item--danger" onclick="document.getElementById('dialog-delete').showModal()">Delete</button></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </section>
 
@@ -183,6 +224,14 @@
                 </select>
               </div>
               <div class="form__group">
+                <label for="q-cover">Cover image</label>
+                <div class="file-input">
+                  <input type="file" id="q-cover" class="file-input__native" accept="image/*" />
+                  <label for="q-cover" class="file-input__trigger btn btn--secondary">Choose file</label>
+                  <span class="file-input__name">No file chosen</span>
+                </div>
+              </div>
+              <div class="form__group">
                 <label for="q-excerpt">Excerpt</label>
                 <textarea id="q-excerpt" placeholder="One sentence summary..."></textarea>
               </div>
@@ -200,7 +249,7 @@
                 </div>
               </div>
               <div class="btn-row">
-                <button class="btn btn--primary">Save</button>
+                <button class="btn btn--primary" onclick="showToast('published', 'Article saved.')">Save</button>
                 <button class="btn btn--secondary">Cancel</button>
               </div>
             </section>
@@ -213,5 +262,95 @@
         </footer>
       </div>
     </div>
+
+    <!-- Dialog: Delete confirm -->
+    <dialog id="dialog-delete" class="dialog">
+      <div class="dialog__header">
+        <h2 class="dialog__title">Delete article</h2>
+      </div>
+      <div class="dialog__body">
+        <p>This article will be permanently deleted. This action cannot be undone.</p>
+      </div>
+      <div class="dialog__footer">
+        <button class="btn btn--secondary" onclick="document.getElementById('dialog-delete').close()">Cancel</button>
+        <button class="btn btn--primary" onclick="document.getElementById('dialog-delete').close(); showToast('published', 'Article deleted.')">Delete</button>
+      </div>
+    </dialog>
+
+    <!-- Dialog: New article -->
+    <dialog id="dialog-new" class="dialog">
+      <div class="dialog__header">
+        <h2 class="dialog__title">New article</h2>
+      </div>
+      <div class="dialog__body">
+        <div class="form__group">
+          <label for="d-title">Title</label>
+          <input type="text" id="d-title" placeholder="Article title" />
+        </div>
+        <div class="form__group">
+          <label for="d-category">Category</label>
+          <select id="d-category">
+            <option value="" disabled selected>Select a category</option>
+            <option value="design">Design</option>
+            <option value="typography">Typography</option>
+            <option value="color">Color</option>
+            <option value="layout">Layout</option>
+          </select>
+        </div>
+      </div>
+      <div class="dialog__footer">
+        <button class="btn btn--secondary" onclick="document.getElementById('dialog-new').close()">Cancel</button>
+        <button class="btn btn--primary" onclick="document.getElementById('dialog-new').close(); showToast('published', 'Article created.')">Create</button>
+      </div>
+    </dialog>
+
+    <!-- Toast stack -->
+    <div class="toast-stack" id="toast-stack"></div>
+
+    <script>
+      document.querySelectorAll('.dropdown__trigger').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var dropdown = this.closest('.dropdown');
+          var isOpen = dropdown.classList.contains('dropdown--open');
+          document.querySelectorAll('.dropdown--open').forEach(function (d) { d.classList.remove('dropdown--open'); });
+          if (!isOpen) {
+            dropdown.classList.add('dropdown--open');
+            var menu = dropdown.querySelector('.dropdown__menu');
+            menu.style.left = '';
+            menu.style.right = '';
+            var rect = menu.getBoundingClientRect();
+            if (rect.right > window.innerWidth) {
+              menu.style.left = 'auto';
+              menu.style.right = '0';
+            }
+          }
+        });
+      });
+
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.dropdown--open').forEach(function (d) { d.classList.remove('dropdown--open'); });
+      });
+
+      document.querySelectorAll('.file-input__native').forEach(function (input) {
+        input.addEventListener('change', function () {
+          var name = this.files.length ? this.files[0].name : 'No file chosen';
+          this.closest('.file-input').querySelector('.file-input__name').textContent = name;
+        });
+      });
+
+      function showToast(type, message) {
+        var stack = document.getElementById('toast-stack');
+        var toast = document.createElement('div');
+        toast.className = 'toast toast--' + type;
+        toast.textContent = message;
+        stack.appendChild(toast);
+        setTimeout(function () { toast.classList.add('toast--visible'); }, 10);
+        setTimeout(function () {
+          toast.classList.remove('toast--visible');
+          setTimeout(function () { toast.remove(); }, 300);
+        }, 3000);
+      }
+    </script>
   </body>
 </html>
