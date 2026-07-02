@@ -12,6 +12,13 @@ Features exist because they are needed, not because dashboards are expected to h
 
 Minimalism serves usability — not the other way around. The user knows the product; the interface should get out of the way, not explain itself. Neatness and convenience outrank purity.
 
+## Views
+
+| File            | View            | Purpose                                                                 |
+| --------------- | --------------- | ----------------------------------------------------------------------- |
+| `index.html`    | Showcase        | Displays the design system — palette, type scale, components.           |
+| `analytic.html` | Analytics board | Live, read-only metrics display. No user interaction — no buttons, links, or hover states. Designed for small screens (~1024×600): fixed-viewport grid, no scrolling. Data ticks via `scripts/analytic.js`. |
+
 ## Color
 
 - Base: `#000000` background, `#ffffff` text.

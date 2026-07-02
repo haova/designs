@@ -8,6 +8,13 @@ Minimalism. Every element earns its place. If it does not serve a purpose, it do
 
 UI recedes. Writing is the identity.
 
+## Views
+
+| File             | View      | Purpose                                                                                          |
+| ---------------- | --------- | ------------------------------------------------------------------------------------------------ |
+| `index.html`     | Showcase  | Displays the design system — articles list, prose, typography, color, buttons, form, code.       |
+| `dashboard.html` | Dashboard | Simulated admin page — sidebar, topbar, stats, and table, applying the style to a management UI. |
+
 ## Color
 
 - Two colors only: `#ffffff` background, `#000000` text.

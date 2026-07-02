@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics — HaoVA Dashboard</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/analytic.css" />
+  </head>
+  <body>
+    <div class="board">
+      <!-- Header -->
+      <header class="board__header">
+        <div class="board__heading">
+          <span class="board__breadcrumb">HaoVA Dashboard</span>
+          <span class="board__sep">/</span>
+          <h1 class="board__title">Analytics</h1>
+        </div>
+        <div class="board__meta">
+          <span class="live">
+            <span class="live__dot"></span>
+            Live
+          </span>
+          <time class="board__clock">--:--:-- UTC</time>
+        </div>
+      </header>
+
+      <!-- Grid -->
+      <main class="board__grid">
+        <!-- Stats -->
+        <section class="stat-row" aria-label="Key metrics">
+          <div class="stat">
+            <div class="stat__top">
+              <p class="stat__value stat__value--visitors">—</p>
+              <p class="stat__delta stat__delta--visitors">—</p>
+            </div>
+            <p class="stat__label">Active visitors</p>
+          </div>
+          <div class="stat">
+            <div class="stat__top">
+              <p class="stat__value stat__value--requests">—</p>
+              <p class="stat__delta stat__delta--requests">—</p>
+            </div>
+            <p class="stat__label">Requests / min</p>
+          </div>
+          <div class="stat">
+            <div class="stat__top">
+              <p class="stat__value stat__value--latency">—</p>
+              <p class="stat__delta stat__delta--latency">—</p>
+            </div>
+            <p class="stat__label">Avg response (ms)</p>
+          </div>
+          <div class="stat">
+            <div class="stat__top">
+              <p class="stat__value stat__value--errors">—</p>
+              <p class="stat__delta stat__delta--errors">—</p>
+            </div>
+            <p class="stat__label">Error rate</p>
+          </div>
+        </section>
+
+        <!-- Requests chart -->
+        <section class="panel panel--chart">
+          <header class="panel__header">
+            <h2 class="panel__title">Requests per minute</h2>
+            <span class="panel__meta">Last 30 min</span>
+          </header>
+          <div class="panel__body">
+            <svg class="chart" role="img" aria-label="Requests per minute over the last 30 minutes"></svg>
+          </div>
+        </section>
+
+        <!-- Top pages -->
+        <section class="panel panel--pages">
+          <header class="panel__header">
+            <h2 class="panel__title">Top pages</h2>
+            <span class="panel__meta">Views, 24 h</span>
+          </header>
+          <div class="panel__body">
+            <div class="bars"></div>
+          </div>
+        </section>
+
+        <!-- Event feed -->
+        <section class="panel panel--events">
+          <header class="panel__header">
+            <h2 class="panel__title">Events</h2>
+            <span class="panel__meta">Most recent first</span>
+          </header>
+          <div class="panel__body panel__body--flush">
+            <table class="feed">
+              <thead class="feed__visually-hidden">
+                <tr>
+                  <th scope="col">Time</th>
+                  <th scope="col">Event</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody class="feed__rows"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Services -->
+        <section class="panel panel--services">
+          <header class="panel__header">
+            <h2 class="panel__title">Services</h2>
+            <span class="panel__meta">p95 latency</span>
+          </header>
+          <div class="panel__body panel__body--flush">
+            <ul class="services"></ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="scripts/analytic.js"></script>
+  </body>
+</html>
