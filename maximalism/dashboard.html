@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — Maximalism</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Unbounded:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <span class="sidebar__name">MAX!</span>
+        </div>
+        <nav class="sidebar__nav">
+          <div class="sidebar__group">
+            <p class="sidebar__group-label">★ Dashboard ★</p>
+            <a href="#through-line" class="sidebar__link sidebar__link--active">Through-line</a>
+            <a href="#color" class="sidebar__link">Color</a>
+            <a href="#typography" class="sidebar__link">Typography</a>
+            <a href="#buttons" class="sidebar__link">Buttons</a>
+            <a href="#badges" class="sidebar__link">Badges</a>
+            <a href="#stats" class="sidebar__link">Stats</a>
+            <a href="#cards" class="sidebar__link">Cards</a>
+            <a href="#table" class="sidebar__link">Table</a>
+            <a href="#form" class="sidebar__link">Form</a>
+            <a href="#dialog" class="sidebar__link">Dialog</a>
+            <a href="#dropdown" class="sidebar__link">Dropdown</a>
+            <a href="#toast" class="sidebar__link">Toast</a>
+            <a href="#code" class="sidebar__link">Code</a>
+          </div>
+        </nav>
+        <div class="sidebar__footer">
+          <span class="sidebar__user">hi@haova.me</span>
+          <a href="#" class="sidebar__signout">Sign out</a>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div class="dashboard__main">
+        <!-- Topbar -->
+        <header class="topbar">
+          <div class="topbar__left">
+            <span class="topbar__breadcrumb">Maximalism</span>
+            <span class="topbar__sep">◆</span>
+            <h1 class="topbar__title">Dashboard</h1>
+          </div>
+          <div class="topbar__actions">
+            <button class="btn btn--secondary">Export</button>
+            <button class="btn btn--primary">New item</button>
+          </div>
+        </header>
+
+        <main class="dashboard__content">
+
+          <!-- Through-line -->
+          <section class="showcase__section" id="through-line">
+            <p class="section-label">★ The Through-Line ★</p>
+            <ul class="throughline">
+              <li class="throughline__item throughline__item--electric">
+                <span class="throughline__name">Electric structure</span>
+                <span class="throughline__desc">Every structural border, divider, and separator is electric-purple-tinted. One hue family owns the skeleton.</span>
+              </li>
+              <li class="throughline__item throughline__item--hot">
+                <span class="throughline__name">Hot actions</span>
+                <span class="throughline__desc">Every primary action runs the same hot → electric gradient. If it glows pink, it does something.</span>
+              </li>
+              <li class="throughline__item throughline__item--acid">
+                <span class="throughline__name">Glyph motif</span>
+                <span class="throughline__desc">★ ◆ ▲ recur in section labels, group labels, and separators. Text characters, never emoji.</span>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Color -->
+          <section class="showcase__section" id="color">
+            <p class="section-label">★ Color ★</p>
+            <div class="palette">
+              <div class="swatch">
+                <div class="swatch__color swatch__color--bg"></div>
+                <span class="swatch__name">Background</span>
+                <span class="swatch__value">#130f14</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch__color swatch__color--text"></div>
+                <span class="swatch__name">Text</span>
+                <span class="swatch__value">#ffffff</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch__color swatch__color--hot"></div>
+                <span class="swatch__name">Accent — Hot</span>
+                <span class="swatch__value">#ff006e</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch__color swatch__color--electric"></div>
+                <span class="swatch__name">Electric</span>
+                <span class="swatch__value">#8338ec</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch__color swatch__color--sky"></div>
+                <span class="swatch__name">Sky</span>
+                <span class="swatch__value">#3a86ff</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch__color swatch__color--lime"></div>
+                <span class="swatch__name">Success — Lime</span>
+                <span class="swatch__value">#06d6a0</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch__color swatch__color--acid"></div>
+                <span class="swatch__name">Warning — Acid</span>
+                <span class="swatch__value">#ffbe0b</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch__color swatch__color--flame"></div>
+                <span class="swatch__name">Danger — Flame</span>
+                <span class="swatch__value">#fb5607</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Typography -->
+          <section class="showcase__section" id="typography">
+            <p class="section-label">◆ Typography — Unbounded + Space Grotesk ◆</p>
+            <div class="type-scale">
+              <div class="type-scale__row">
+                <span class="type-scale__meta">4xl / 900</span>
+                <h1>Heading One</h1>
+              </div>
+              <div class="type-scale__row">
+                <span class="type-scale__meta">3xl / 900</span>
+                <h2>Heading Two</h2>
+              </div>
+              <div class="type-scale__row">
+                <span class="type-scale__meta">2xl / 900</span>
+                <h3>Heading Three</h3>
+              </div>
+              <div class="type-scale__row">
+                <span class="type-scale__meta">base / 400</span>
+                <p>Body text. Energetic, dense, alive — but the data still reads first.</p>
+              </div>
+              <div class="type-scale__row">
+                <span class="type-scale__meta">sm / 400</span>
+                <small>Small — labels, timestamps, metadata.</small>
+              </div>
+              <div class="type-scale__row">
+                <span class="type-scale__meta">sm / 700 upper</span>
+                <p class="section-label">★ Section label ★</p>
+              </div>
+              <div class="type-scale__row">
+                <span class="type-scale__meta">mono / 400</span>
+                <code>const accent = "#ff006e"; /* obviously */</code>
+              </div>
+            </div>
+          </section>
+
+          <!-- Buttons -->
+          <section class="showcase__section" id="buttons">
+            <p class="section-label">◆ Buttons ◆</p>
+            <div class="btn-row">
+              <button class="btn btn--primary">Primary</button>
+              <button class="btn btn--secondary">Secondary</button>
+              <button class="btn btn--danger">Danger</button>
+              <button class="btn btn--primary" disabled>Disabled</button>
+            </div>
+          </section>
+
+          <!-- Badges -->
+          <section class="showcase__section" id="badges">
+            <p class="section-label">★ Badges ★</p>
+            <div class="btn-row">
+              <span class="badge badge--success">Active</span>
+              <span class="badge badge--warning">Pending</span>
+              <span class="badge badge--danger">Failed</span>
+              <span class="badge badge--neutral">Draft</span>
+            </div>
+          </section>
+
+          <!-- Stats -->
+          <section class="showcase__section" id="stats">
+            <p class="section-label">◆ Stats ◆</p>
+            <div class="stat-grid">
+              <div class="stat-grid__item">
+                <p class="stat-grid__value">12,847</p>
+                <p class="stat-grid__label">Total views</p>
+              </div>
+              <div class="stat-grid__item">
+                <p class="stat-grid__value">64</p>
+                <p class="stat-grid__label">Items published</p>
+              </div>
+              <div class="stat-grid__item">
+                <p class="stat-grid__value">512</p>
+                <p class="stat-grid__label">Actions taken</p>
+              </div>
+              <div class="stat-grid__item">
+                <p class="stat-grid__value">128</p>
+                <p class="stat-grid__label">Active users</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Cards -->
+          <section class="showcase__section" id="cards">
+            <p class="section-label">★ Cards ★</p>
+            <div class="card-row">
+              <div class="card">
+                <div class="card__header">
+                  <span class="card__title">Recent activity</span>
+                  <button class="btn btn--secondary btn--sm">View all</button>
+                </div>
+                <div class="card__body">
+                  <p>
+                    Cards wear thick colored borders and gradient headers. The chrome is loud;
+                    the body stays plain white-on-dark so the content wins the fight. Inline
+                    links <a href="#through-line">announce themselves</a> — never mistakable
+                    for plain text.
+                  </p>
+                </div>
+              </div>
+              <div class="card card--hot">
+                <div class="card__header">
+                  <span class="card__title">Loud by design</span>
+                  <button class="btn btn--primary btn--sm">Boost</button>
+                </div>
+                <div class="card__body">
+                  <p>
+                    No uniform card style — cards for different content types may look
+                    visually distinct. This one runs hot. The through-line holds them together.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Table -->
+          <section class="showcase__section" id="table">
+            <p class="section-label">◆ Table ◆</p>
+            <div class="card">
+              <div class="card__header">
+                <span class="card__title">Items</span>
+                <button class="btn btn--primary btn--sm">Add item</button>
+              </div>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Category</th>
+                      <th>Status</th>
+                      <th>Date</th>
+                      <th class="col-num">Views</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Whitespace is wasted space</td>
+                      <td>Design</td>
+                      <td><span class="badge badge--success">Published</span></td>
+                      <td class="col-date">2026-06-20</td>
+                      <td class="col-num">4,821</td>
+                    </tr>
+                    <tr>
+                      <td>All colors, all the time</td>
+                      <td>Color</td>
+                      <td><span class="badge badge--warning">Pending</span></td>
+                      <td class="col-date">2026-06-12</td>
+                      <td class="col-num">—</td>
+                    </tr>
+                    <tr>
+                      <td>Mix it until it works</td>
+                      <td>Typography</td>
+                      <td><span class="badge badge--neutral">Draft</span></td>
+                      <td class="col-date">2026-05-30</td>
+                      <td class="col-num">—</td>
+                    </tr>
+                    <tr>
+                      <td>The chaos needs a director</td>
+                      <td>Layout</td>
+                      <td><span class="badge badge--success">Published</span></td>
+                      <td class="col-date">2026-05-14</td>
+                      <td class="col-num">2,377</td>
+                    </tr>
+                    <tr>
+                      <td>Less is a bore</td>
+                      <td>Philosophy</td>
+                      <td><span class="badge badge--danger">Failed</span></td>
+                      <td class="col-date">2026-05-02</td>
+                      <td class="col-num">—</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- Form -->
+          <section class="showcase__section" id="form">
+            <p class="section-label">★ Form ★</p>
+            <div class="form__group">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" placeholder="Enter name" />
+            </div>
+            <div class="form__group form__group--error">
+              <label for="f-slug">Slug</label>
+              <input type="text" id="f-slug" value="less is more" />
+              <p class="form__error">! Slugs cannot contain spaces. Make it one loud word.</p>
+            </div>
+            <div class="form__group">
+              <label for="f-status">Status</label>
+              <select id="f-status">
+                <option value="" disabled selected>Select status</option>
+                <option value="active">Active</option>
+                <option value="draft">Draft</option>
+                <option value="archived">Archived</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <span class="form__label">Type</span>
+              <div class="form__radio-group">
+                <label for="r-standard">
+                  <input type="radio" id="r-standard" name="type" value="standard" checked />
+                  Standard
+                </label>
+                <label for="r-featured">
+                  <input type="radio" id="r-featured" name="type" value="featured" />
+                  Featured (MORE!)
+                </label>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="f-notify">
+                <input type="checkbox" id="f-notify" />
+                Notify on publish
+              </label>
+            </div>
+            <div class="form__group">
+              <label for="f-file">Attachment</label>
+              <div class="file-input">
+                <input type="file" id="f-file" class="file-input__native" />
+                <label for="f-file" class="file-input__trigger btn btn--secondary">Choose file</label>
+                <span class="file-input__name">No file chosen</span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="f-notes">Notes</label>
+              <textarea id="f-notes" placeholder="Say EVERYTHING..."></textarea>
+            </div>
+            <div class="btn-row">
+              <button class="btn btn--primary">Save</button>
+              <button class="btn btn--secondary">Cancel</button>
+            </div>
+          </section>
+
+          <!-- Dialog -->
+          <section class="showcase__section" id="dialog">
+            <p class="section-label">◆ Dialog ◆</p>
+            <div class="btn-row">
+              <button class="btn btn--secondary" data-dialog-open="dialog-confirm">Confirm dialog</button>
+              <button class="btn btn--secondary" data-dialog-open="dialog-form">Form dialog</button>
+              <button class="btn btn--danger" data-dialog-open="dialog-danger">Danger dialog</button>
+            </div>
+          </section>
+
+          <!-- Dialog: Confirm -->
+          <dialog id="dialog-confirm" class="dialog">
+            <div class="dialog__header">
+              <h2 class="dialog__title">Confirm action</h2>
+            </div>
+            <div class="dialog__body">
+              <p>Are you sure you want to proceed? This cannot be undone.</p>
+            </div>
+            <div class="dialog__footer">
+              <button class="btn btn--secondary" data-dialog-close>Cancel</button>
+              <button class="btn btn--primary" data-dialog-close>Confirm</button>
+            </div>
+          </dialog>
+
+          <!-- Dialog: Form -->
+          <dialog id="dialog-form" class="dialog">
+            <div class="dialog__header">
+              <h2 class="dialog__title">New item</h2>
+            </div>
+            <div class="dialog__body">
+              <div class="form__group">
+                <label for="d-name">Name</label>
+                <input type="text" id="d-name" placeholder="Enter name" />
+              </div>
+              <div class="form__group">
+                <label for="d-status">Status</label>
+                <select id="d-status">
+                  <option value="" disabled selected>Select status</option>
+                  <option value="active">Active</option>
+                  <option value="draft">Draft</option>
+                </select>
+              </div>
+            </div>
+            <div class="dialog__footer">
+              <button class="btn btn--secondary" data-dialog-close>Cancel</button>
+              <button class="btn btn--primary" data-dialog-close>Save</button>
+            </div>
+          </dialog>
+
+          <!-- Dialog: Danger -->
+          <dialog id="dialog-danger" class="dialog dialog--danger">
+            <div class="dialog__header">
+              <h2 class="dialog__title">Delete item</h2>
+            </div>
+            <div class="dialog__body">
+              <p>This item will be permanently deleted. This action cannot be undone.</p>
+            </div>
+            <div class="dialog__footer">
+              <button class="btn btn--secondary" data-dialog-close>Cancel</button>
+              <button class="btn btn--danger" data-dialog-close>Delete</button>
+            </div>
+          </dialog>
+
+          <!-- Dropdown -->
+          <section class="showcase__section" id="dropdown">
+            <p class="section-label">★ Dropdown ★</p>
+            <div class="btn-row">
+              <div class="dropdown">
+                <button class="btn btn--secondary dropdown__trigger">Actions</button>
+                <ul class="dropdown__menu">
+                  <li><button class="dropdown__item">Edit</button></li>
+                  <li><button class="dropdown__item">Duplicate</button></li>
+                  <li class="dropdown__divider"></li>
+                  <li><button class="dropdown__item dropdown__item--danger">Delete</button></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn--primary dropdown__trigger">Primary</button>
+                <ul class="dropdown__menu">
+                  <li><button class="dropdown__item">Publish now</button></li>
+                  <li><button class="dropdown__item">Schedule</button></li>
+                  <li><button class="dropdown__item">Save as draft</button></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Toast -->
+          <section class="showcase__section" id="toast">
+            <p class="section-label">◆ Toast ◆</p>
+            <div class="btn-row">
+              <button class="btn btn--secondary" data-toast="success">Success</button>
+              <button class="btn btn--secondary" data-toast="warning">Warning</button>
+              <button class="btn btn--secondary" data-toast="danger">Danger</button>
+              <button class="btn btn--secondary" data-toast="neutral">Neutral</button>
+            </div>
+          </section>
+
+          <!-- Toast container -->
+          <div class="toast-stack" id="toast-stack"></div>
+
+          <!-- Code -->
+          <section class="showcase__section" id="code">
+            <p class="section-label">★ Tokens ★</p>
+            <div class="code-block">
+              <pre>:root {
+  --color-hot:      #ff006e;  /* accent */
+  --color-electric: #8338ec;  /* structural chrome */
+  --color-acid:     #ffbe0b;  /* warning */
+  --color-sky:      #3a86ff;
+  --color-lime:     #06d6a0;  /* success */
+  --color-flame:    #fb5607;  /* danger */
+
+  --font-display: "Unbounded", "Arial Black", Impact, sans-serif;
+  --font-sans:    "Space Grotesk", Arial, sans-serif;
+  --font-mono:    "JetBrains Mono", "Courier New", monospace;
+}</pre>
+            </div>
+          </section>
+
+        </main>
+      </div>
+    </div>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/dialog.js"></script>
+    <script src="scripts/toast.js"></script>
+    <script src="scripts/file-input.js"></script>
+  </body>
+</html>
