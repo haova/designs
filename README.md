@@ -303,10 +303,17 @@ For dashboard styles, ensure the following components are present:
 
 ## Styles
 
-| Directory                                        | Style                | Core idea                                               |
-| ------------------------------------------------ | -------------------- | ------------------------------------------------------- |
-| [`haova/`](haova/)                               | HaoVA Style          | Two colors, one typeface, no decoration. Content leads. |
-| [`haova-dashboard/`](haova-dashboard/)           | HaoVA Dashboard      | Minimalism applied to data-driven interfaces.           |
-| [`minimalism/`](minimalism/)                     | Minimalism           | Every element must justify its existence.               |
-| [`brutalism/`](brutalism/)                       | Brutalism            | Structure is visible. Nothing is hidden.                |
-| [`maximalism/`](maximalism/)                     | Maximalism           | More is more — when the chaos has a director.           |
+**Bases**
+
+| Directory                    | Style      | Core idea                                     |
+| ---------------------------- | ---------- | --------------------------------------------- |
+| [`minimalism/`](minimalism/) | Minimalism | Every element must justify its existence.     |
+| [`brutalism/`](brutalism/)   | Brutalism  | Structure is visible. Nothing is hidden.      |
+| [`maximalism/`](maximalism/) | Maximalism | More is more — when the chaos has a director. |
+
+**Variants**
+
+| Directory                              | Style           | Core idea                                               |
+| -------------------------------------- | --------------- | ------------------------------------------------------- |
+| [`haova/`](haova/)                     | HaoVA Style     | Two colors, one typeface, no decoration. Content leads. |
+| [`haova-dashboard/`](haova-dashboard/) | HaoVA Dashboard | Minimalism applied to data-driven interfaces.           |
