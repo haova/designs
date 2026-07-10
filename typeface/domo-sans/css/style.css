@@ -1,0 +1,196 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Castledown";
+  src:
+    url("../fonts/castledown-regular.woff2") format("woff2"),
+    url("../fonts/castledown-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Castledown";
+  src:
+    url("../fonts/castledown-heavy.woff") format("woff"),
+    url("../fonts/castledown-heavy.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DoMo Sans";
+  src: url("../fonts/DoMo-Sans-variable.ttf") format("truetype-variations");
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: url("../fonts/Lexend-variable.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* No system fallback allowed for specimen text: "Tofu" renders a plain
+   hollow box for Basic Latin, Latin-1, Latin Extended A/B, Latin Extended
+   Additional (where Vietnamese tone marks live), and General Punctuation.
+   The box glyph is mapped through a real cmap entry, not left as .notdef --
+   a font with an *empty* cmap doesn't work here: browsers treat "no
+   mapping" as "this font doesn't apply" and skip past it to the system
+   default instead of rendering a box. */
+@font-face {
+  font-family: "Tofu";
+  src: url("../fonts/Tofu-Regular.ttf") format("truetype");
+  font-display: block;
+}
+
+/* Tokens */
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-border: #000000;
+
+  --font-sans: "Castledown", Georgia, serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  --weight-regular: 400;
+  --weight-bold: 700;
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.4;
+  --leading-normal: 1.65;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-full: 0;
+
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+
+  --duration-fast: 0.1s;
+  --duration-base: 0.15s;
+  --duration-slow: 0.3s;
+  --ease-default: ease;
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+
+  --max-width: 72rem;
+}
+
+/* Base */
+
+html {
+  font-size: clamp(16px, 1.1vw, 20px);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.01em;
+}
+
+p {
+  line-height: var(--leading-normal);
+}
+
+small {
+  font-size: var(--text-sm);
+}
+
+/* Layout */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+/* Components */
+
+.section-label {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-6);
+}
+
+/* Site header */
+
+.site__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--space-6);
+  border-bottom: 1px solid var(--color-text);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.site__name {
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.01em;
+}
+
+.site__tagline {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Site footer */
+
+.site__footer {
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--color-text);
+  font-size: var(--text-xs);
+}
