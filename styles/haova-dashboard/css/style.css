@@ -3,7 +3,7 @@
 @font-face {
   font-family: "DoMo Sans";
   src:
-    url("../fonts/domo-sans-variable.ttf") format("truetype");
+    url("../fonts/DoMoSans[opsz,wght].ttf") format("truetype");
   font-style: normal;
   font-display: swap;
 }

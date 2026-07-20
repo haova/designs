@@ -24,7 +24,7 @@ UI recedes. Writing is the identity.
 
 ## Typography
 
-- Typeface: **DoMo Sans** only (variable font).
+- Typeface: **DoMo Sans** only (variable font) — https://github.com/haova/domo-fonts/tree/domo
 - Body: `400`, `line-height: 1.65`.
 - Headings: `700`, `line-height: 1.2`.
 - Blockquote: `line-height: 1.4`.

@@ -31,7 +31,7 @@ Minimalism serves usability — not the other way around. The user knows the pro
 
 ## Typography
 
-- Typeface: **DoMo Sans** only (variable font).
+- Typeface: **DoMo Sans** only (variable font) — https://github.com/haova/domo-fonts/tree/domo
 - Body: `400`, `line-height: 1.6`.
 - Headings: `700`, `line-height: 1.2`.
 - Data values (numbers, stats): `700`, tabular-nums where alignment matters.
