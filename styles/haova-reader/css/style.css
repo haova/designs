@@ -1,19 +1,7 @@
 @font-face {
-  font-family: "Castledown";
+  font-family: "DoMo Sans";
   src:
-    url("../fonts/castledown-regular.woff2") format("woff2"),
-    url("../fonts/castledown-regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Castledown";
-  src:
-    url("../fonts/castledown-heavy.woff") format("woff"),
-    url("../fonts/castledown-heavy.ttf") format("truetype");
-  font-weight: 700;
+    url("../fonts/domo-sans-variable.ttf") format("truetype");
   font-style: normal;
   font-display: swap;
 }
@@ -25,7 +13,7 @@
   --color-text: #000000;
   --color-border: #000000;
 
-  --font-sans: "Castledown", Georgia, serif;
+  --font-sans: "DoMo Sans", serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 
   --text-xs: 0.75rem;

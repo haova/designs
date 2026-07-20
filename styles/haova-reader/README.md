@@ -24,7 +24,7 @@ UI recedes. Writing is the identity.
 
 ## Typography
 
-- Typeface: **Castledown** only — `400` regular, `700` heavy. No weights in between.
+- Typeface: **DoMo Sans** only (variable font).
 - Body: `400`, `line-height: 1.65`.
 - Headings: `700`, `line-height: 1.2`.
 - Blockquote: `line-height: 1.4`.
